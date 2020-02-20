@@ -1,0 +1,8 @@
+{
+  "name": "apolo-tutorias",
+  "version": "1.0.0",
+  "description": "Platform to manage personalized tutorships at the university of the Andes.",
+  "main": "index.js",
+  "author": "Luis Carlos Garavito Romero - Kelvin Santiago Estupinan Garavito",
+  "license": "MIT"
+}
