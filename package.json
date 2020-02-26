@@ -3,6 +3,16 @@
   "version": "1.0.0",
   "description": "Platform to manage personalized tutorships at the university of the Andes.",
   "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
+  },
   "author": "Luis Carlos Garavito Romero - Kelvin Santiago Estupinan Garavito",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
