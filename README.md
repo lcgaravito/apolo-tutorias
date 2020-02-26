@@ -5,6 +5,9 @@ Instalación:
 npm install
 ```
 Despliegue:
+Entrar al folder del proyecto desde la terminal y escribir:
+
 ```
-npm start
+npm init
 ```
+Dar enter ante las opciones que van a salir
