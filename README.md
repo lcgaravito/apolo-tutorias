@@ -8,6 +8,5 @@ Despliegue:
 Entrar al folder del proyecto desde la terminal y escribir:
 
 ```
-npm init
+npm start
 ```
-Dar enter ante las opciones que van a salir
