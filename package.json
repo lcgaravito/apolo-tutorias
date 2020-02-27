@@ -1,19 +1,28 @@
 {
-    "name": "apolo-tutorias",
-    "version": "1.0.0",
-    "description": "Platform to manage personalized tutorships at the university of the Andes.",
-    "main": "index.js",
-    "scripts": {
-        "start": "node server.js",
-        "nodemon": "nodemon server.js"
-    },
-    "author": "Luis Carlos Garavito Romero - Kelvin Santiago Estupinan Garavito",
-    "license": "MIT",
-    "dependencies": {
-        "express": "^4.17.1",
-        "hbs": "^4.1.0"
-    },
-    "devDependencies": {
-        "nodemon": "^2.0.2"
-    }
+  "name": "apolo-tutorias",
+  "version": "1.0.0",
+  "description": "Platform to manage personalized tutorships at the university of the Andes.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "nodemon": "nodemon server.js"
+  },
+  "author": "Luis Carlos Garavito Romero - Kelvin Santiago Estupinan Garavito",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.0",
+    "save": "^2.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcgaravito/apolo-tutorias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lcgaravito/apolo-tutorias/issues"
+  },
+  "homepage": "https://github.com/lcgaravito/apolo-tutorias#readme"
 }
