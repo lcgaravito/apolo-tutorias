@@ -1,5 +1,3 @@
-'use strict'
-
 const express = require('express');
 const app = express();
 
@@ -15,25 +13,12 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
+    res.render('index');
+});
+
+app.get('/home', (req, res) => {
     res.render('home');
 });
-
-app.get('/about', (req, res) => {
-    res.render('about');
-});
-
-// app.get('/', (req, res) => {
-//     let salida = {
-//         name: 'Luis',
-//         age: 20,
-//         url: req.url
-//     };
-//     // res.send('Hello World')
-//     res.send(salida);
-// });
-// app.get('/data', (req, res) => {
-//     res.send(`Hello data. URL: ${req.url}`);
-// });
 
 app.listen(port, () => {
     console.log(`Listening on port: ${port}`);
