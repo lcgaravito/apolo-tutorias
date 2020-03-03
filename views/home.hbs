@@ -4,7 +4,19 @@
 <body>
     {{> navbar }}
     <section>
-        <h1>Hello!</h1>
+        <div class="container">
+            <div class="jumbotron mt-4">
+                <h1>¡Bienvenido!</h1>
+                <p class="lead mt-4">¿Qué deseas hacer?</p>
+                <hr class="my-4">
+                <div id="categories" class="mt-4">
+                    <a class="btn btn-outline-primary btn-lg" href="/disponibles" role="button">Reservar una tutoría</a>
+                    <a class="btn btn-outline-primary btn-lg" href="/reservas" role="button">Ver tus reservas</a>
+                    <hr class="my-4">
+                    <a class="btn btn-outline-success btn-lg" href="/crear" role="button">Crear una tutoría</a>
+                </div>
+            </div>
+        </div>
     </section>
     {{> footer }}
     {{> scripts }}

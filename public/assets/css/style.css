@@ -16,6 +16,10 @@ body {
     width: 50%;
 }
 
+.btn {
+    margin: 4px;
+}
+
 h1 {
     font-family: 'Lilita One';
 }
