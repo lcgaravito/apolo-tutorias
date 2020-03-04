@@ -19,19 +19,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
+//GET index page
 app.get('/', (req, res) => {
     res.render('index');
 });
 
+//GET home page
 app.get('/home', (req, res) => {
     res.render('home');
 });
 
+//GET categorias page
 app.get('/categorias', (req, res) => {
     var category = ['Matemáticas', 'Física', 'Química', 'Programación'];
     res.send(category);
 });
 
+//GET disponibles page
 app.get('/disponibles', (req, res) => {
     res.sendFile(__dirname + '/public/disponibles.html');
 });
