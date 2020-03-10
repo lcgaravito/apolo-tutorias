@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const hbs = require('hbs');
 require('./hbs/helpers');
 
+const mu = require('./db/MongoUtils.js');
+
 const port = process.env.PORT || 3000;
 
 // parse application/x-www-form-urlencoded
@@ -20,22 +22,31 @@ hbs.registerPartials(__dirname + '/views/partials');
 app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
-    res.render('index');
+	res.render('index');
 });
 
 app.get('/home', (req, res) => {
-    res.render('home');
+	res.render('home');
 });
 
 app.get('/categorias', (req, res) => {
-    var category = ['Matemáticas', 'Física', 'Química', 'Programación'];
-    res.send(category);
+	var category = ['Matemáticas', 'Física', 'Química', 'Programación'];
+	res.send(category);
+});
+
+app.get('/disponiblesss', (req, res) => {
+	mu.db.find().then(usuarioos =>
+		res.send(usuarioos)
+	);
+	//res.sendFile(__dirname + '/public/disponibles.html');
 });
 
 app.get('/disponibles', (req, res) => {
-    res.sendFile(__dirname + '/public/disponibles.html');
+	res.sendFile(__dirname + '/public/disponibles.html');
 });
 
 app.listen(port, () => {
-    console.log(`Listening on port: ${port}`);
+	console.log(`Listening on port: ${port}`);
 });
+
+//mongodb+srv://admin:admin@cluster0-twpse.mongodb.net/test?retryWrites=true&w=majority
