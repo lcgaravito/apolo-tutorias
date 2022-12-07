@@ -12,7 +12,7 @@
   "dependencies": {
     "es2015": "0.0.0",
     "eslint": "^6.8.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "hbs": "^4.1.0",
     "mongodb": "^3.5.4",
     "save": "^2.4.0"
